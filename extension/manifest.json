@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Automation Recorder Audit",
+  "version": "0.1.0",
+  "description": "Records semantic browser interactions into a redacted automation audit trail.",
+  "permissions": ["storage", "tabs", "activeTab", "downloads", "unlimitedStorage"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_popup": "popup.html" },
+  "content_scripts": [{ "matches": ["<all_urls>"], "js": ["content.js"], "run_at": "document_start" }]
+}

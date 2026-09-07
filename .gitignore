@@ -1,0 +1,4 @@
+node_modules/
+.automation-recorder/
+coverage/
+.DS_Store

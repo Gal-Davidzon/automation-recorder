@@ -1,0 +1,12 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>body{font:14px system-ui;width:260px;margin:16px}button{width:100%;margin:4px 0;padding:8px}.warning{color:#8a3b00}</style></head>
+<body>
+  <strong>Automation Recorder Audit</strong>
+  <p id="status">Loading…</p>
+  <button id="toggle">Start recording</button>
+  <label><input id="screenshots" type="checkbox"> Capture screenshots (may include visible sensitive data)</label>
+  <button id="export">Export audit data</button>
+  <button id="clear">Clear local data</button>
+  <p class="warning">Passwords, auth tokens, and clipboard text are redacted. Review before replay.</p>
+  <script src="popup.js"></script>
+</body></html>
